@@ -1,0 +1,25 @@
+{
+  "name": "scroll-intersect",
+  "version": "1.0.0",
+  "description": "Infinite scroll using the IntersectionObserver api.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "/dist"
+  ],
+  "keywords": ["infinite-scroll", "intersection-observer", "scroll"],
+  "author": "Reny Pacheco",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
