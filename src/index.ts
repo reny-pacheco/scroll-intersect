@@ -6,7 +6,7 @@ type FetchNextPage = () => Promise<void>;
  * Add infinite scroll using the IntersectionObserver api.
  *
  * @param   fetchNextPage  Function to be called when reaching the last element during scroll.
- * @returns Ref value.
+ * @returns Ref value. Add this as ref for every list item.
  */
 const useScrollIntersect = (
   fetchNextPage: FetchNextPage

@@ -10,7 +10,8 @@
     "prepare": "npm run build"
   },
   "files": [
-    "/dist"
+    "/dist",
+    "README.md"
   ],
   "keywords": ["infinite-scroll", "intersection-observer", "scroll"],
   "author": "Reny Pacheco",
