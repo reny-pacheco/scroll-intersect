@@ -18,7 +18,11 @@ const useScrollIntersect = (
     new IntersectionObserver(async (entries: IntersectionObserverEntry[]) => {
       const first = entries[0];
       if (first.isIntersecting) {
-        await fetchNextPage();
+        
+        //check the type to prevent type error
+        if (typeof fetchNextPage === 'function') {
+          await fetchNextPage();
+        }
       }
     })
   );
