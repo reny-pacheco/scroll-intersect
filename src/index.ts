@@ -9,7 +9,7 @@ type FetchNextPage = () => Promise<void>;
  * @returns Ref value. Add this as ref for every list item.
  */
 const useScrollIntersect = (
-  fetchNextPage: FetchNextPage
+  fetchNextPage: FetchNextPage | undefined
 ): React.Dispatch<React.SetStateAction<HTMLElement>> => {
   const [lastElementRef, setlastElementRef] = useState<HTMLElement>(null);
 
